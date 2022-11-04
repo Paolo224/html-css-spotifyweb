@@ -65,12 +65,38 @@ div.upgrade{
     height: 70px;
     background-color: #080b12;
     width: 100%;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
 }
 
-footer{
-    width: 100%;
-    background-color: #282828;
-    height: 80px;
+#button-upgrade{
+    border: 2px solid white;
+    background-color: #080b12;
+    border-radius: 33rem;
+    padding: .7rem 1.5rem;
+    color: white;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+div.generi{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+div.generi ul li{
+    list-style-type: none;
+    color: #84868a;
+    display: inline;
+    margin: 1rem;
+    
+}
+
+main p, h2{
+    margin-left: .5rem;
 }
 
 div.discs{
@@ -80,9 +106,34 @@ div.discs{
 div.disc{
     background-color: red;
     width: calc((100% / 6) - 1rem);
-    height: 100px;
     border: 2px solid green;
     margin: .5rem .5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.disc-img{
+    background-color: aquamarine;
+    text-align: center;
+    height: 120px;
+    width: 120px;
+}
+
+div.disc-img figure{
+    overflow: hidden;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+div.disc-text{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #282828;
+    height: 80px;
 }
 
 @media screen and (max-width: 1100px) {
