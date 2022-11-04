@@ -20,8 +20,34 @@ main{
     background-color: #141922;
 }
 
+div.upgrade{
+    height: 70px;
+    background-color: #080b12;
+    width: 100%;
+}
+
 footer{
     width: 100%;
     background-color: #282828;
     height: 80px;
+}
+
+div.disc{
+    background-color: red;
+    width: calc((100% / 6) - .5rem);
+    height: 100px;
+    border: 2px solid green;
+    margin: .5rem .5rem;
+}
+
+@media screen and (max-width: 992px) {
+    div.discs{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+    
 }
