@@ -25,6 +25,11 @@ header{
     overflow: hidden;
 }
 
+div.header-disposition{
+    justify-content: space-between;
+    height: calc(100% - 45px);
+}
+
 div.logo{
     margin-bottom: 1.5rem;
 }
