@@ -15,6 +15,8 @@
 
 body{
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
 }
 
 header{
@@ -27,23 +29,23 @@ header{
 
 div.header-disposition{
     justify-content: space-between;
-    height: calc(100% - 45px);
+    height: calc(100% - 70px);
 }
 
 div.logo{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-div.img-logo{
-    background-color: aqua;
-    flex-basis: 30%;
-    text-align: end;
-} 
+div.logo img{
+    width: 70%;
+}
 
-div.text-logo{
-    background-color: greenyellow;
-    flex-basis: 70%;
-} 
+nav ul li img{
+    width: 20px;
+    margin-right: .3rem;
+    /* filter: grayscale(100%); */
+}
 
 nav h3{
     margin-top: 1rem;
@@ -52,13 +54,33 @@ nav h3{
 nav ul li{
     list-style-type: none;
     margin-top: .5rem;
+    font-size: .75rem;
+    color: gray;
+}
+
+li.crea-play i{
+    color: black;
+    font-size: 1.1rem;
+}
+
+li.crea-play p{
+    align-items: center;
+    margin-left: .3rem;
+}
+
+div.plus{
+    background-color: #a3a3a3;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
     width: calc(100% - 230px);
     height: calc(100vh - 80px);
     background-color: #141922;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 div.upgrade{
@@ -92,7 +114,10 @@ div.generi ul li{
     color: #84868a;
     display: inline;
     margin: 1rem;
-    
+}
+
+div.generi ul{
+    text-align: center;
 }
 
 main p, h2{
@@ -104,19 +129,20 @@ div.discs{
 }
 
 div.disc{
-    background-color: red;
     width: calc((100% / 6) - 1rem);
-    border: 2px solid green;
-    margin: .5rem .5rem;
+    margin: 0 .5rem;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 div.disc-img{
-    background-color: aquamarine;
     text-align: center;
-    height: 120px;
-    width: 120px;
+}
+
+div.disc-img img{
+    width: 100%;
 }
 
 div.disc-img figure{
