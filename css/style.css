@@ -124,7 +124,7 @@ div.upgrade{
 }
 
 #button-upgrade{
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: #080b12;
     border-radius: 33rem;
     padding: .7rem 1.5rem;
@@ -170,6 +170,7 @@ div.disc{
 
 div.disc-img{
     text-align: center;
+    margin-bottom: .7rem;
 }
 
 div.disc-img img{
@@ -187,11 +188,63 @@ div.disc-text{
     text-align: center;
 }
 
+p.sottotitolo{
+    color: gray;
+    font-size: .7rem;
+
+}
+
 footer{
     width: 100%;
     background-color: #282828;
     height: 80px;
 }
+
+div.organaizer-footer{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+div.block{
+    /* background-color: rgb(114, 114, 114); */
+    height: 55px;
+    width: calc(100% / 3);
+}
+
+div.block img{
+    margin-right: .5rem;
+    margin-left: .7rem;
+}
+
+div.block div.canzone-corrente{
+    justify-content: center;
+}
+
+div.like-fold{
+    align-items: center;
+    margin-left: 3rem;
+    color: gray;
+}
+
+div.like-fold i:first-child{
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1100px) {
     div.discs{
