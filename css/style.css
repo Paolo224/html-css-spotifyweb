@@ -272,6 +272,10 @@ div.organaizer-footer div.block1{
     width: 230px;
 }
 
+div.block1 p.sottotitolo:hover{
+    text-decoration: underline;
+}
+
 div.canzone-riproduzione{
     align-items: center;
     justify-content: space-between;
@@ -289,6 +293,11 @@ div.like-folder{
 
 div.like-folder i{
     color: gray;
+    cursor: pointer;
+}
+
+div.like-folder i:hover{
+    color: white;
 }
 
 div.organaizer-footer div.block2{
@@ -305,6 +314,11 @@ div.strumenti{
 
 div.strumenti i{
     margin: 0 1rem;
+}
+
+div.strumenti i:nth-child(3):hover{
+    scale: 1.25;
+    cursor: pointer;
 }
 
 div.tempo{
@@ -332,6 +346,50 @@ div.light-gray{
     height: 5px;
     background-color: #8c8c8c;
     border-radius: 33rem;
+    position: relative;
+}
+
+div.dark-gray-volume{
+    width: 60%;
+    height: 5px;
+    background-color: #5c5c5c;
+    border-radius: 33rem;
+}
+
+div.light-gray-volume{
+    width: 40%;
+    height: 5px;
+    background-color: #8c8c8c;
+    border-radius: 33rem;
+    position: relative;
+}
+
+div.white-point{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    left: 100%;
+    bottom: 50%;
+    translate: -50% 50%;
+    display: none;
+}
+
+div.light-gray:hover{
+    background-color: lime;
+}
+
+div.light-gray-volume:hover{
+    background-color: lime;
+}
+
+div.light-gray-volume:hover div.white-point{
+    display: block;
+}
+
+div.light-gray:hover div.white-point{
+    display: block;
 }
 
 div.organaizer-footer div.block3{
