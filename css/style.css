@@ -67,6 +67,15 @@ nav ul li{
     margin-top: .5rem;
     font-size: .75rem;
     color: gray;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    color: white;
+    font-weight: 700;
+}
+nav ul li:hover div{
+    background-color: white;
 }
 
 li.crea-play i{
@@ -94,6 +103,12 @@ div.profile img{
 div.profile p{
     margin-left: .3rem;
     font-size: .75rem;
+    cursor: pointer;
+}
+
+div.profile p:hover{
+    color: white;
+    font-weight: 700;
 }
 
 div.profile hr{
@@ -131,6 +146,11 @@ div.upgrade{
     color: white;
     font-size: .7rem;
     cursor: pointer;
+    margin-right: 1rem;
+}
+
+#button-upgrade:hover{
+    scale: 1.25;
 }
 
 div.generi{
@@ -145,6 +165,12 @@ div.generi ul li{
     color: #84868a;
     display: inline;
     margin: 1rem;
+    cursor: pointer;
+}
+
+div.generi ul li:hover{
+    color: white;
+    font-weight: 700;
 }
 
 div.generi ul{
