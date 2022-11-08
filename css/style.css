@@ -171,6 +171,35 @@ div.disc{
 div.disc-img{
     text-align: center;
     margin-bottom: .7rem;
+    position: relative;
+    cursor: pointer;
+}
+
+div.disc-img div.opacita{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: .6;
+    display: none;
+}
+
+div.disc-img i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: none;
+    z-index: 2;
+}
+
+div.disc-img:hover>i{
+    display: block;
+}
+
+div.disc-img:hover>.opacita{
+    display: block;
 }
 
 div.disc-img img{
@@ -215,7 +244,7 @@ div.organaizer-footer div.block1{
 div.canzone-riproduzione{
     align-items: center;
     height: 50px;
-    width: 50%;
+    width: 35%;
     justify-content: space-between;
 }
 
@@ -243,29 +272,9 @@ div.strumenti{
     align-items: center;
 }
 
-div.strumenti>div.indietro{
-    border-left: 3px solid white;
-    margin: 0 1rem;
-}
-
-div.strumenti>div.play{
-    border: 4px solid white;
-    border-radius: 50%;
-    margin: 0 1rem;
-    justify-content: center;
-    align-items: center;
-    padding: .2rem;
-    width: 37px;
-    height: 37px;
-}
-
-div.strumenti>div.avanti{
-    margin: 0 1rem;
-    border-right: 3px solid white;
-}
-
 div.strumenti i{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin: 0 1rem;
 }
 
 div.tempo{
