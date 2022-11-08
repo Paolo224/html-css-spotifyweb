@@ -68,13 +68,27 @@ nav ul li{
     font-size: .75rem;
     color: gray;
     cursor: pointer;
+    position: relative;
 }
+
+div.trattino-lime-verticale{
+    position: absolute;
+    background-color: lime;
+    height: 100%;
+    width: 2px;
+    right: 101%;
+    display: none;
+}
+
+nav ul:first-child li:hover div.trattino-lime-verticale{
+    display: block;
+} 
 
 nav ul li:hover{
     color: white;
     font-weight: 700;
 }
-nav ul li:hover div{
+nav ul li:hover div.plus{
     background-color: white;
 }
 
@@ -154,6 +168,16 @@ div.upgrade{
     scale: 1.25;
 }
 
+div.trattino-lime{
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: lime;
+    left: 50%;
+    translate: -50% 0;
+    display: none;
+}
+
 div.generi{
     justify-content: center;
     align-items: center;
@@ -167,11 +191,16 @@ div.generi ul li{
     display: inline;
     margin: 1rem;
     cursor: pointer;
+    position: relative;
 }
 
 div.generi ul li:hover{
     color: white;
     font-weight: 700;
+}
+
+div.generi ul li:hover div.trattino-lime{
+    display: block;
 }
 
 div.generi ul{
