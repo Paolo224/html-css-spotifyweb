@@ -206,31 +206,27 @@ div.organaizer-footer{
     height: 100%;
 }
 
-div.block{
-    /* background-color: rgb(114, 114, 114); */
-    height: 55px;
-    width: calc(100% / 3);
-}
-
-div.block img{
-    margin-right: .5rem;
-    margin-left: .7rem;
-}
-
-div.block div.canzone-corrente{
-    justify-content: center;
-}
-
-div.like-fold{
+div.organaizer-footer div.block1{
     align-items: center;
-    margin-left: 3rem;
-    color: gray;
+    justify-content: space-around;
+    width: 20%;
 }
 
-div.like-fold i:first-child{
-    margin-right: 1rem;
+div.canzone-riproduzione{
+    align-items: center;
+    height: 50px;
+    width: 60%;
+    justify-content: space-between;
 }
 
+div.canzone-riproduzione img{
+    width: 50px;
+}
+
+div.like-folder{
+    width: 20%;
+    justify-content: space-between;
+}
 
 
 
